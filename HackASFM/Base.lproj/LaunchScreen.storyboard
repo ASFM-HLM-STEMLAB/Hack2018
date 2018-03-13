@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch_gradient" translatesAutoresizingMaskIntoConstraints="NO" id="C9t-NV-Rhj">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch_title" translatesAutoresizingMaskIntoConstraints="NO" id="LUa-WH-lSm">
+                                <rect key="frame" x="67" y="115" width="240" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="LUa-WH-lSm" secondAttribute="height" multiplier="120:19" id="Rca-nh-8uu"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2018" translatesAutoresizingMaskIntoConstraints="NO" id="Dvn-DX-kRT">
+                                <rect key="frame" x="152" y="624" width="70" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Dvn-DX-kRT" secondAttribute="height" multiplier="70:23" id="oZI-Kc-OLW"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LUa-WH-lSm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="DKp-UZ-Y0t"/>
+                            <constraint firstItem="C9t-NV-Rhj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ODd-aS-pEW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LUa-WH-lSm" secondAttribute="trailing" constant="68" id="YXT-0J-MCH"/>
+                            <constraint firstItem="C9t-NV-Rhj" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="cOt-ZZ-dcY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Dvn-DX-kRT" secondAttribute="trailing" constant="153" id="fvc-0y-kOI"/>
+                            <constraint firstItem="C9t-NV-Rhj" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="hJm-bk-nwL"/>
+                            <constraint firstItem="C9t-NV-Rhj" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="htN-HU-jwy"/>
+                            <constraint firstItem="Dvn-DX-kRT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="152" id="jAQ-Rm-38P"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Dvn-DX-kRT" secondAttribute="bottom" constant="20" id="m4h-Hh-Y5x"/>
+                            <constraint firstItem="LUa-WH-lSm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="95" id="s5C-tr-RO4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="2018" width="67" height="23"/>
+        <image name="launch_gradient" width="375" height="812"/>
+        <image name="launch_title" width="237" height="38"/>
+    </resources>
+</document>

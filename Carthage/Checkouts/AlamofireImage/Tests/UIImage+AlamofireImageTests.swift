@@ -1,7 +1,7 @@
 //
 //  UIImage+AlamofireImageTests.swift
 //
-//  Copyright (c) 2015-2017 Alamofire Software Foundation (http://alamofire.org/)
+//  Copyright (c) 2015-2018 Alamofire Software Foundation (http://alamofire.org/)
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -114,7 +114,11 @@ extension UIImage {
         - returns: The PNG representation image.
     */
     func af_imageWithPNGRepresentation() -> UIImage {
+        #if swift(>=4.2)
+        let data = pngData()!
+        #else
         let data = UIImagePNGRepresentation(self)!
+        #endif
         let image = UIImage(data: data, scale: UIScreen.main.scale)!
 
         return image

@@ -3,7 +3,8 @@ All notable changes to this project will be documented in this file.
 `AlamofireImage` adheres to [Semantic Versioning](http://semver.org/).
 
 #### 3.x Releases
-- `3.3.x` Releases - [3.3.0](#330)
+- `3.4.x` Releases - [3.4.0](#340) | [3.4.1](#341)
+- `3.3.x` Releases - [3.3.0](#330) | [3.3.1](#331)
 - `3.2.x` Releases - [3.2.0](#320)
 - `3.1.x` Releases - [3.1.0](#310)
 - `3.0.x` Releases - [3.0.0](#300)
@@ -23,6 +24,50 @@ All notable changes to this project will be documented in this file.
 - `1.0.0` Betas - [1.0.0-beta.1](#100-beta1)
 
 ---
+
+## [3.4.1](https://github.com/Alamofire/AlamofireImage/releases/tag/3.4.1)
+Released on 2018-09-17. All issues associated with this milestone can be found using this
+[filter](https://github.com/Alamofire/AlamofireImage/milestone/26?closed=1).
+
+#### Updated
+- The Xcode project configuration to use workspace linking instead of nested projects.
+  - Updated by [Christian Noon](https://github.com/cnoon) in Pull Request [#329](https://github.com/Alamofire/AlamofireImage/pull/329).
+
+#### Fixed
+- A minor `CIGaussianBlur` typo in one of the README examples.
+  - Fixed by [Joe DeCapo](https://github.com/JrGoodle) in Pull Request [#319](https://github.com/Alamofire/AlamofireImage/pull/319).
+
+## [3.4.0](https://github.com/Alamofire/AlamofireImage/releases/tag/3.4.0)
+Released on 2018-09-13. All issues associated with this milestone can be found using this
+[filter](https://github.com/Alamofire/AlamofireImage/milestone/25?closed=1).
+
+#### Updated
+- Project configuration and files for Xcode 10 and Swift 4.2.
+  - Updated by [Jon Shier](https://github.com/jshier) in Pull Request [#326](https://github.com/Alamofire/AlamofireImage/pull/326).
+
+---
+
+## [3.3.1](https://github.com/Alamofire/AlamofireImage/releases/tag/3.3.1)
+Released on 2018-03-31. All issues associated with this milestone can be found using this
+[filter](https://github.com/Alamofire/AlamofireImage/milestone/24?closed=1).
+
+#### Added
+- Jazzy docs and configuration.
+  - Added by [Jon Shier](https://github.com/jshier) in Pull Request [#309](https://github.com/Alamofire/AlamofireImage/pull/309).
+- Ruby environment settings that match Alamofire's.
+  - Added by [Jon Shier](https://github.com/jshier) in Pull Request [#309](https://github.com/Alamofire/AlamofireImage/pull/309).
+
+#### Updated
+- Project configuration and files for Xcode 9.3 and Swift 4.1.
+  - Updated by [Jon Shier](https://github.com/jshier) in Pull Request [#309](https://github.com/Alamofire/AlamofireImage/pull/309).
+- Copyrights to 2018 for all files.
+  - Updated by [Jon Shier](https://github.com/jshier) in Pull Request [#309](https://github.com/Alamofire/AlamofireImage/pull/309).
+- TravisCI configuration for Xcode 9.3.
+  - Updated by [Jon Shier](https://github.com/jshier) in Pull Request [#309](https://github.com/Alamofire/AlamofireImage/pull/309).
+
+#### Fixed
+- Gravatar API usage in example code.
+  - Fixed by [Felipe Plets](https://github.com/felipeplets) in Pull Request [#298](https://github.com/Alamofire/AlamofireImage/pull/298).
 
 ## [3.3.0](https://github.com/Alamofire/AlamofireImage/releases/tag/3.3.0)
 Released on 2017-09-06. All issues associated with this milestone can be found using this

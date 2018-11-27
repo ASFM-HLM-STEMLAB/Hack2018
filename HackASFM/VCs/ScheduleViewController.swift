@@ -40,15 +40,6 @@ class ScheduleViewController: UIViewController, UITableViewDelegate, UITableView
         // Dispose of any resources that can be recreated.
     }
     
-    // MARK: - More Info Segue
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "MoreInfoSegue" {
-            
-        }
-    }
-    
-    
     // MARK: - UITableViewDataSource
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -72,6 +63,14 @@ class ScheduleViewController: UIViewController, UITableViewDelegate, UITableView
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 80
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        let moreInfoAlert = UIAlertController(title: schedule.eventList[indexPath.row].name, message: schedule.eventList[indexPath.row].description, preferredStyle: .alert)
+        moreInfoAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        self.present(moreInfoAlert, animated: true, completion: nil)
     }
     
     // MARK: - JSON Handling
@@ -105,7 +104,7 @@ class ScheduleViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     func loadSchedule() {
-        for (index, subJson):(String, JSON) in (jsonData?["schedule"])! {
+        for (_, subJson):(String, JSON) in (jsonData?["schedule"])! {
             
             let eventTime = subJson["time"].stringValue
             let eventName = subJson["name"].stringValue

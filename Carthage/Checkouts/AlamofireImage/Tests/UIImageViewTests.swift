@@ -1,7 +1,7 @@
 //
 //  UIImageViewTests.swift
 //
-//  Copyright (c) 2015-2017 Alamofire Software Foundation (http://alamofire.org/)
+//  Copyright (c) 2015-2018 Alamofire Software Foundation (http://alamofire.org/)
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -385,7 +385,7 @@ class UIImageViewTestCase: BaseTestCase {
             withURL: url,
             imageTransition: .custom(
                 duration: 0.5,
-                animationOptions: UIViewAnimationOptions(),
+                animationOptions: [],
                 animations: { $0.image = $1 },
                 completion: nil
             )
@@ -485,7 +485,7 @@ class UIImageViewTestCase: BaseTestCase {
             filter: nil,
             imageTransition: .custom(
                 duration: 0.1,
-                animationOptions: UIViewAnimationOptions(),
+                animationOptions: [],
                 animations: { $0.image = $1 },
                 completion: { _ in
                     transitionCompletionHandlerCalled = true
